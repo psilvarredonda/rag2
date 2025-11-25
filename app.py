@@ -7,7 +7,8 @@ from google import genai
 
 # Cargar variables de entorno
 load_dotenv()
-api_key = os.getenv("GENAI_API_KEY")
+# api_key = os.getenv("GENAI_API_KEY")
+api_key = st.secrets["GENAI_API_KEY"]
 
 # Crear cliente de Google GenAI
 client = genai.Client(api_key=api_key)
@@ -60,4 +61,5 @@ RESPUESTA:
         st.write(answer)
 
         with st.expander("📄 Contexto completo usado:"):
+
             st.text(context)
