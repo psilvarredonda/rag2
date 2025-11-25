@@ -1,0 +1,8 @@
+streamlit
+python-dotenv
+langchain
+langchain-community
+chromadb
+sentence-transformers
+google-genai
+langchain_huggingface
